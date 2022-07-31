@@ -40,7 +40,7 @@ public class Generic3DInteract : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay (Collider other)
+    private void OnTriggerStay (Collider other) // was told "Stay" was wasteful and could use an alternative
     {
         if (triggerLayerMask == (triggerLayerMask | (1 << other.gameObject.layer)))
         {
