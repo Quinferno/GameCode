@@ -40,7 +40,7 @@ public class Generic3DInteract : MonoBehaviour
         }
     }
 
-    private void OnTrigger(Collider other)
+    private void OnTriggerStay (Collider other)
     {
         if (triggerLayerMask == (triggerLayerMask | (1 << other.gameObject.layer)))
         {
@@ -48,7 +48,8 @@ public class Generic3DInteract : MonoBehaviour
             {
                 uIController.choiceWindow.SetActive(true);
             }
-            }
         }
     }
+    
+}//Don't think this was stray, just poorly formatted and confusing to look at.
 
